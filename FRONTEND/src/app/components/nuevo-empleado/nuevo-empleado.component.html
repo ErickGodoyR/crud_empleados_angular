@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" (ngSubmit)="onSubmit()" #empleadoForm = "ngForm">
+                    <fieldset>
+
+                        <legend class="text-center header">Agregar Empleado</legend>                        
+
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                placeholder="nombre" name="nombre"
+                                [(ngModel)]="empleado.nombre">
+                                <label for="floatingInput">Nombre</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-user bigicon2"></i></span>
+                        <div class="col-md-8">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                placeholder="apellido paterno" name="apellido_paterno"
+                                [(ngModel)]="empleado.apellido_paterno">
+                                <label for="floatingInput">Apellido Paterno</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-user bigicon2"></i></span>
+                        <div class="col-md-8">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                placeholder="apellido materno" name="apellido_materno"
+                                [(ngModel)]="empleado.apellido_materno">
+                                <label for="floatingInput">Apellido Materno</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-location-dot bigicon"></i></span>
+                        <div class="col-md-8">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                placeholder="direccion" name="direccion"
+                                [(ngModel)]="empleado.direccion">
+                                <label for="floatingInput">Direccion</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa-solid fa-envelope bigicon"></i></span>
+                        <div class="col-md-8">
+                            <div class="form-floating mb-3">                                
+                                <input type="text" class="form-control" id="floatingInput"
+                                placeholder="email" name="email"
+                                [(ngModel)]="empleado.email">                                
+                                <label for="floatingInput">Correo</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12 text-center">
+                          <button type="btn btn-success" class="btn btn-primary btn-lg">Agregar</button>
+                        </div>
+                      </div>
+
+                </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
